@@ -9,7 +9,7 @@ const balance = (state = 0, action) => {
     case constants.WITHDRAW:
       return state - action.withdrawal;
     default:
-      return balance;
+      return state;
   }
 }
 

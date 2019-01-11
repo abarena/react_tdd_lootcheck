@@ -20,7 +20,7 @@ describe('Wallet', () => {
   });
 
   describe('when the user types into the wallet input', ()=> {
-     const userBalance = 25;
+    const userBalance = '25';
      
     beforeEach(() => {
       wallet.find('.input-wallet').simulate('change', { target: { value: userBalance}});

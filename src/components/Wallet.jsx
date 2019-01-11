@@ -3,9 +3,7 @@ import { connect } from 'react-redux';
 import { deposit } from '../actions/balance';
 export class Wallet extends Component {
 
-  state = {
-    balance: undefined
-  }
+  state = { balance: undefined };
 
   updateBalance = event => this.setState({balance: parseInt(event.target.value, 10)});
   
@@ -24,4 +22,4 @@ export class Wallet extends Component {
 
 const mapStateToProps = state => ({balance: state});
 
-export default connect(mapStateToProps, {deposit})(Wallet);
+export default connect(mapStateToProps, { deposit })(Wallet);
